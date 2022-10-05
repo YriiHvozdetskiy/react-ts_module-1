@@ -8,6 +8,7 @@ export const PageTitle = ({title} :IPageTitle) => {
    return (
       <>
          <h1 className={styles.title}>{title}</h1>
+         <h1 className={styles.title}>{title}</h1>
       </>
    );
 };
