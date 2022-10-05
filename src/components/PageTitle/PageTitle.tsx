@@ -7,7 +7,7 @@ interface IPageTitle {
 export const PageTitle = ({title} :IPageTitle) => {
    return (
       <>
-
+         hello
       </>
    );
 };
