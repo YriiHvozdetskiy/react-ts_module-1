@@ -5,7 +5,7 @@ import {PageTitle} from './components/PageTitle/PageTitle';
 export const App = () => {
    return (
       <div className="App">
-         <PageTitle title={'create project'}/>
+         <PageTitle title={'Hello word'}/>
       </div>
    );
 };
