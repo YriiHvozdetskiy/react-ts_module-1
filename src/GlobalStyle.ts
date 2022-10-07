@@ -1,22 +1,22 @@
 import {createGlobalStyle} from 'styled-components';
-import 'normalize.css';
+import '../node_modules/normalize.css/normalize.css';
 // @ts-ignore
-import Montserrat  from '../fonts/Montserrat-Bold.ttf'
+import Montserrat  from './fonts/Montserrat-Bold.ttf'
 
 
 
 export const GlobalStyle = createGlobalStyle`
-  
+
   @font-face {
     font-family: Montserrat;
-    src: url(${Montserrat}) format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    src: url(${Montserrat}) format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
 
   h2 {
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
   }
 
   * {
@@ -49,6 +49,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    font-family: Montserrat ,sans-serif;
     //color: $primary-text-color;
     //text-rendering: optimizeLegibility;
     -ms-text-size-adjust: 100%;
