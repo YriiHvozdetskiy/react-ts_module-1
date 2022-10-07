@@ -4,7 +4,7 @@ import {Title} from './Title.styled';
 import  {Text} from './Text.styled';
 
 interface IPageTitle {
-   title: string;
+   title?: string;
 }
 
 export const PageTitle = ({title}: IPageTitle) => {
@@ -13,7 +13,7 @@ export const PageTitle = ({title}: IPageTitle) => {
          <h1 className={styles.title}>{title}</h1>
 
          <Title id={'4'} size={40}>styled-components</Title>
-         <Text id={'5'}>emotion</Text>
+         <Text id={'34'}>emotion</Text>
       </>
    );
 };

@@ -5,7 +5,6 @@ import {Container} from './components/Container/Container';
 import user from './data.json'
 
 export const App = () => {
-   console.log('user',user)
    return (
       <div className="App">
          <PageTitle title={'Hello word'}/>

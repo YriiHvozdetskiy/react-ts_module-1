@@ -1,4 +1,4 @@
-import {MainContainer, Title} from './Container.styled';
+import {MainContainer} from './Container.styled';
 import React, {FC} from 'react';
 
 interface IProp {

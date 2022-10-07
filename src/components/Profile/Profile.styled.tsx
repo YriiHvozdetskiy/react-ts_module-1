@@ -38,7 +38,6 @@ export const StatsInfo = styled.div`
   width: 100%;
   background: aliceblue;
 `;
-
 export const InfoWrapper = styled.div`
   padding: 15px 10px;
   flex-basis: 33.33%;
@@ -48,12 +47,15 @@ export const InfoWrapper = styled.div`
     border-right: solid 1px rgba(105, 105, 105, 0.2);
   }
 `;
-
 export const Text = styled.p`
   color: gray;
 `;
 
-export const BoldText = styled.p`
-  color: black;
+type TBoldText = {
+   value?: number
+}
+
+export const BoldText = styled.p<TBoldText>`
+  color: ${props => props.value && props.value > 2000 ? 'red' : 'green'};
   font-weight: 700;
 `;

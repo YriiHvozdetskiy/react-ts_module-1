@@ -9,9 +9,10 @@ import {
    InfoWrapper, Text, BoldText,
 } from './Profile.styled';
 import React, {FC} from 'react';
+import {PageTitle} from '../PageTitle/PageTitle';
 
 interface IProps {
-   user: {
+   user:{
       username: string;
       tag: string;
       location: string;
@@ -21,10 +22,10 @@ interface IProps {
          views: number
          likes: number
       };
-   };
+   }
 }
 
-export const Profile: FC<IProps> = (props) => {
+export const Profile:FC<IProps> = (props) => {
    const {username: name, tag, location, avatar, stats} = props.user;
    const URL = 'https://github.com/goitacademy/react-homework/tree/master/homework-01/social-profile'
    return (
@@ -39,18 +40,19 @@ export const Profile: FC<IProps> = (props) => {
             <StatsInfo>
                <InfoWrapper>
                   <Text>Followers</Text>
-                  <BoldText>{stats?.followers}</BoldText>
+                  <BoldText value={stats?.followers}>  {stats?.followers}</BoldText>
                </InfoWrapper>
                <InfoWrapper>
                   <Text>Views</Text>
-                  <BoldText>{stats?.views}</BoldText>
+                  <BoldText value={stats?.views}>{stats?.views}</BoldText>
                </InfoWrapper>
                <InfoWrapper>
                   <Text>Likes</Text>
-                  <BoldText>{stats.likes}</BoldText>
+                  <BoldText value={stats?.likes}>{stats?.likes}</BoldText>
                </InfoWrapper>
             </StatsInfo>
          </ProfileContainer>
+         <PageTitle/>
       </>
    );
 };
