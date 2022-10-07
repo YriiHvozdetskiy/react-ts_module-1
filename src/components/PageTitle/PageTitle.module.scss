@@ -1,6 +1,11 @@
+@value font-weight from '../../css/vars.module.css';
+@value font-size from '../../css/vars.module.css';
+
+$fontFamily:Raleway;
+
 .title{
    color: chartreuse;
-   &__sub{
-      font-size: 40px;
-   }
+   font-size: font-size;
+   font-family: $fontFamily;
 }
+

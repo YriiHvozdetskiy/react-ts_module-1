@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {PageTitle} from './components/PageTitle/PageTitle';
 
 export const App = () => {
