@@ -6,7 +6,7 @@ export const ProfileContainer = styled.div`
   align-items: center;
   width: 300px;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #0003;;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #0003;
 `;
 export const Link = styled.a`
   display: flex;
