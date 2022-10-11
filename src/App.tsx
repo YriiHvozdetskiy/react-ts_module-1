@@ -4,13 +4,18 @@ import {Profile} from './components/Profile/Profile';
 import {Container} from './components/Container/Container';
 import {Statistics} from './components/Statistics/Statistics';
 import {FriendList} from './components/FriendList/FriendList';
+import {TransactionHistory} from './components/TransactionHistory/TransactionHistory';
 import user from './data.json'
 import stats from 'stats.json'
 import friends from './friends.json'
+import  transactions from './transactions.json'
 
 export const App = () => {
    return (
       <div className="App">
+         <Container>
+            <TransactionHistory items={transactions}/>
+         </Container>
          <Container>
             <FriendList friends={friends}/>
          </Container>
