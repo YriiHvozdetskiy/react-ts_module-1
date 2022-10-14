@@ -11,11 +11,11 @@ export const TableRow = styled.tr`
 `;
 
 export const Header = styled.thead`
-  background: #00bcd5;
+  background: ${props => props.theme.colors.assent};
 `;
 
 export const HeaderItem = styled.th`
-  color: white;
+  color: ${props => props.theme.colors.secondary};
   text-transform: uppercase;
   padding: 10px;
   width: 300px;

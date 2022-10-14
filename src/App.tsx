@@ -9,9 +9,12 @@ import user from './data.json'
 import stats from 'stats.json'
 import friends from './friends.json'
 import  transactions from './transactions.json'
+import {ThemeProvider} from 'styled-components';
+import {theme} from './theme';
 
 export const App = () => {
    return (
+     <ThemeProvider theme={theme}>
       <div className="App">
          <Container>
             <TransactionHistory items={transactions}/>
@@ -25,6 +28,7 @@ export const App = () => {
          </Container>
          <Statistics title='Upload Stats' stats={stats}/>
       </div>
+     </ThemeProvider>
    );
 };
 
